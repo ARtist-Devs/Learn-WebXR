@@ -1,0 +1,30 @@
+{
+  "name": "learn-webxr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "npm run dev -w webxr-app",
+    "dev": "npm run dev -w webxr-app",
+    "build": "npm run build -w webxr-app",
+    "build:dev": "npm run build:dev -w webxr-app",
+    "serve": "npm run serve -w webxr-app",
+    "test": "npm run test -w webxr-app",
+    "lint": "npm run lint -w webxr-app"
+  },
+  "keywords": [
+    "webxr",
+    "threejs",
+    "monorepo",
+    "vite"
+  ],
+  "author": "Ayşegül Yönet",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "eslint": "^8.0.0"
+  }
+}

@@ -1,0 +1,26 @@
+// packages/webxr-app/tsconfig.json
+{
+  "compilerOptions": {
+    "target": "ESNext", // Compile to modern JavaScript
+    "module": "ESNext", // Use modern module system
+    "moduleResolution": "Bundler", // Align module resolution with Vite/modern bundlers
+    "lib": ["ESNext", "DOM", "DOM.Iterable"], // Include standard libraries for browser and modern JS
+    "strict": true, // Enable all strict type-checking options
+    "esModuleInterop": true, // Enables compatibility with CommonJS modules
+    "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
+    "skipLibCheck": true, // Skip type checking of declaration files (.d.ts)
+    "noUnusedLocals": true, // Report errors on unused local variables
+    "noUnusedParameters": true, // Report errors on unused parameters
+    "noFallthroughCasesInSwitch": true, // Report errors for fallthrough cases in switch statement
+    "forceConsistentCasingInFileNames": true, // Ensure that casing is correct in imports
+    "isolatedModules": true, // Ensure files can be safely compiled individually (Vite requires this)
+    "noEmit": true, // Don't output files (Vite handles transpilation)
+    "resolveJsonModule": true, // Allow importing JSON files
+    // Specify types used in the project
+    "types": ["vite/client", "vitest/globals"] // Include Vite client types and Vitest globals
+  },
+  // Specify files to include in the compilation
+  "include": ["src", "vite.config.ts", "*.cjs"], // Include source files and Vite config
+  // Specify files/patterns to exclude
+  "exclude": ["node_modules", "dist"]
+}
